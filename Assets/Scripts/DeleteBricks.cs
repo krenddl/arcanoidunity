@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeleteBricks : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class DeleteBricks : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             DropBonus();
+            GameObject[] bricks = GameObject.FindGameObjectsWithTag("Brick");
+
+            if (bricks.Length == 1)
+            {
+                Time.timeScale = 1f;
+                SceneManager.LoadScene(0);
+            }
+
             Destroy(gameObject);
         }
 

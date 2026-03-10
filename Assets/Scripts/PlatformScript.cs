@@ -11,7 +11,7 @@ public class PlatformScript : MonoBehaviour
         ShrinkPlatform
     }
 
-    [SerializeField] private float platformSizeChange = 1f;
+    [SerializeField] private float platformSizeChange = 15f;
     [SerializeField] private float speedChange = 2f;
     [SerializeField] public GameObject ballPrefab;
 
@@ -48,16 +48,15 @@ public class PlatformScript : MonoBehaviour
     private void CreateExtraBalls()
     {
         GameObject currentBall = GameObject.FindGameObjectWithTag("Ball");
-
-        if (currentBall == null)
-            return;
+        if (currentBall == null || ballPrefab == null) return;
 
         Vector3 pos = currentBall.transform.position;
 
-        GameObject ball1 = Instantiate(currentBall, new Vector3(0, 0, 0), Quaternion.identity);
-        ball1.transform.localScale = Vector3.one;
-        GameObject ball2 = Instantiate(currentBall, new Vector3(0, 0, 0), Quaternion.identity);
-        ball2.transform.localScale = Vector3.one;
+        GameObject ball1 = Instantiate(ballPrefab, pos, Quaternion.identity);
+        GameObject ball2 = Instantiate(ballPrefab, pos, Quaternion.identity);
+
+        ball1.transform.localScale = currentBall.transform.localScale;
+        ball2.transform.localScale = currentBall.transform.localScale;
 
 
         BallMove bm1 = ball1.GetComponent<BallMove>();
@@ -68,6 +67,7 @@ public class PlatformScript : MonoBehaviour
 
         if (bm2 != null)
             bm2.LaunchWithDirection(new Vector2(1f, 1f).normalized);
+
     }
 
     private void ChangeBallSpeed(float value)
@@ -87,13 +87,7 @@ public class PlatformScript : MonoBehaviour
     {
         Vector3 scale = transform.localScale;
         scale.x += amount;
-
-        if (scale.x < 2f)
-            scale.x = 2f;
-
-        if (scale.x > 6f)
-            scale.x = 6f;
-
+        scale.x = Mathf.Clamp(scale.x, 40f, 100f);
         transform.localScale = scale;
     }
 }
