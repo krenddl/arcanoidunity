@@ -6,9 +6,12 @@ public class DeleteBricks : MonoBehaviour
     [SerializeField] private float bonusChance = 0.3f;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DropBonus();
         if (collision.gameObject.CompareTag("Ball"))
+        {
+            DropBonus();
             Destroy(gameObject);
+        }
+
     }
 
     private void DropBonus()

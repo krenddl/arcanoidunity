@@ -23,14 +23,14 @@ public class BallMove : MonoBehaviour
     void StartBall()
     {
         float angle = Random.Range(-30f, 30f);
-        Vector2 direction = new Vector2(Mathf.Sin(angle * Mathf.Deg2Rad), -Mathf.Cos(angle * Mathf.Deg2Rad));
+        Vector2 direction = new Vector2(Mathf.Sin(angle * Mathf.Deg2Rad), Mathf.Cos(angle * Mathf.Deg2Rad));
         rb.linearVelocity = direction.normalized * speed;
         IsStarted = true;
     }
 
     void FixedUpdate()
     {
-        if(IsStarted)
+        if (IsStarted && rb.linearVelocity.magnitude > 0.01f)
         {
             rb.linearVelocity = rb.linearVelocity.normalized * speed;
         }

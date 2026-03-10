@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 407431392952785950}
   - component: {fileID: 1407550982697552767}
-  - component: {fileID: 3165395897347067480}
+  - component: {fileID: 7174997168684312647}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &3165395897347067480
+--- !u!61 &7174997168684312647
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.87, y: 0.91}
+    oldSize: {x: 187, y: 91}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.87, y: 0.91}
+  m_Size: {x: 187, y: 91}
   m_EdgeRadius: 0

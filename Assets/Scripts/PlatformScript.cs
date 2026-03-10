@@ -49,20 +49,25 @@ public class PlatformScript : MonoBehaviour
     {
         GameObject currentBall = GameObject.FindGameObjectWithTag("Ball");
 
-        if (currentBall == null || ballPrefab == null)
+        if (currentBall == null)
             return;
 
-        GameObject ball1 = Instantiate(ballPrefab, currentBall.transform.position, Quaternion.identity);
-        GameObject ball2 = Instantiate(ballPrefab, currentBall.transform.position, Quaternion.identity);
+        Vector3 pos = currentBall.transform.position;
+
+        GameObject ball1 = Instantiate(currentBall, new Vector3(0, 0, 0), Quaternion.identity);
+        ball1.transform.localScale = Vector3.one;
+        GameObject ball2 = Instantiate(currentBall, new Vector3(0, 0, 0), Quaternion.identity);
+        ball2.transform.localScale = Vector3.one;
+
 
         BallMove bm1 = ball1.GetComponent<BallMove>();
         BallMove bm2 = ball2.GetComponent<BallMove>();
 
         if (bm1 != null)
-            bm1.LaunchWithDirection(new Vector2(-1f, 1f));
+            bm1.LaunchWithDirection(new Vector2(-1f, 1f).normalized);
 
         if (bm2 != null)
-            bm2.LaunchWithDirection(new Vector2(1f, 1f));
+            bm2.LaunchWithDirection(new Vector2(1f, 1f).normalized);
     }
 
     private void ChangeBallSpeed(float value)
