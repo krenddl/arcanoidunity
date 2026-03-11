@@ -1,9 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelScript : MonoBehaviour
 {
     [SerializeField]private Animator mainMenuAnimator;
     [SerializeField]private Animator levelMenuAnimator;
+    
 
     public void ClickBtn()
     {
