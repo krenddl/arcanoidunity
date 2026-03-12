@@ -1,8 +1,11 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DeleteBricks : MonoBehaviour
 {
+    [SerializeField] private AudioClip breakSound;
+    [SerializeField] private AudioClip breakSoundWin;
     [SerializeField] private int health = 1;
     [SerializeField] private bool unbreakable = false;
 
@@ -31,15 +34,22 @@ public class DeleteBricks : MonoBehaviour
         if(health <= 0)
         {
             DropBonus();
+            AudioSource.PlayClipAtPoint(breakSound, transform.position);
             GameObject[] bricks = GameObject.FindGameObjectsWithTag("Brick");
 
             if (bricks.Length == 1)
             {
-                Time.timeScale = 1f;
-                SceneManager.LoadScene(0);
+                AudioSource.PlayClipAtPoint(breakSoundWin, transform.position);
+                Time.timeScale = 0f;
+                StartCoroutine(RestartScene());
+                Destroy(gameObject, breakSoundWin.length);
+            }
+            else
+            {
+                Destroy(gameObject);
             }
 
-            Destroy(gameObject);
+
 
         }
         else
@@ -63,6 +73,13 @@ public class DeleteBricks : MonoBehaviour
 
     }
 
+    IEnumerator RestartScene()
+    {
+        yield return new WaitForSecondsRealtime(breakSoundWin.length);
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
 
     private void DropBonus()

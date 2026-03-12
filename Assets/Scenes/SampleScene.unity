@@ -187,6 +187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -377,6 +379,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 188792337}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188792339}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &29515018 stripped
 GameObject:
@@ -446,6 +451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -1107,6 +1114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -1532,6 +1541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -1589,6 +1600,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
+--- !u!82 &148787301
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53416009}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &153445636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
@@ -1914,6 +2022,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1795700757}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1795700759}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &183863221 stripped
 GameObject:
@@ -1983,6 +2094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2062,6 +2175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2090,6 +2205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2147,6 +2264,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &188792339
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188792333}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &191683424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2586,6 +2800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2700,6 +2916,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2012006053}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2012006055}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!4 &243210504 stripped
 Transform:
@@ -2774,6 +2993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2853,6 +3074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -2984,7 +3207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -423
+      value: -330
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3207,6 +3430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -3321,6 +3546,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 802031469}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 802031471}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &358263881
 PrefabInstance:
@@ -3462,7 +3690,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.83}
+    oldSize: {x: 2.86, y: 1.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3482,6 +3710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
@@ -3556,7 +3786,7 @@ PrefabInstance:
     - target: {fileID: 1407550982697552767, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
+      objectReference: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
     - target: {fileID: 3165395897347067480, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -3575,7 +3805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -3678,6 +3908,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -3757,6 +3989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -3919,6 +4153,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 751766751}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 751766753}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &434362890
 PrefabInstance:
@@ -3962,7 +4199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -537
+      value: -441
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4073,6 +4310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -4152,6 +4391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 0}
@@ -4257,6 +4498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509406151}
   - component: {fileID: 509406150}
+  - component: {fileID: 509406152}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Untagged
@@ -4338,6 +4580,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &509406152
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509406149}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,7 +4817,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.83}
+    oldSize: {x: 2.86, y: 1.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4486,29 +4825,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
---- !u!114 &546763897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546763894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
-  health: 1
-  unbreakable: 1
-  normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
-  crackedSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
-  bonusPrefabs:
-  - {fileID: 3288914198481275136, guid: 446a0a4b89a57d74db2dd64047f8cc38, type: 3}
-  - {fileID: 9185667218006837155, guid: f8399874a3c6713409d270bd5bb2eb59, type: 3}
-  - {fileID: 535629914136241761, guid: 3c2e31c0d83a130449708adadffdc34a, type: 3}
-  - {fileID: 4344562157463832622, guid: bcd0332446146e54cb0478aba936131e, type: 3}
-  - {fileID: 6594667176350371328, guid: 6013cdcd949437241a6baea1090812e7, type: 3}
-  bonusChance: 0.3
 --- !u!1 &559346976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -4577,6 +4893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -4731,7 +5049,7 @@ PrefabInstance:
     - target: {fileID: 1407550982697552767, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
+      objectReference: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
     - target: {fileID: 3165395897347067480, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -4750,7 +5068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -5688,7 +6006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -537
+      value: -441
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5911,6 +6229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -6107,6 +6427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -6410,6 +6732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -6530,6 +6854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -6587,6 +6913,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
+--- !u!82 &751766753
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123053436}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &768423916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407431392952785950, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -6718,6 +7141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -6775,6 +7200,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &802031471
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72045916}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &807189434
 GameObject:
   m_ObjectHideFlags: 0
@@ -6941,6 +7463,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1046379403}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1046379405}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &810017457 stripped
 GameObject:
@@ -7010,6 +7535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7089,6 +7616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7117,6 +7646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7174,6 +7705,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.87, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &817443290
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278661430}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &833654690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -7242,6 +7870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7301,7 +7931,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.83}
+    oldSize: {x: 2.86, y: 1.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7321,6 +7951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
@@ -7400,6 +8032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7606,6 +8240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -7728,6 +8364,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 148787299}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 148787301}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &883060309
 PrefabInstance:
@@ -7832,6 +8471,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1841492408}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1841492410}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &895948724
 PrefabInstance:
@@ -8013,6 +8655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -8106,7 +8750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -8247,6 +8891,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1521476268}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1521476270}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &912764797
 PrefabInstance:
@@ -8428,6 +9075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -8507,6 +9156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -8535,6 +9186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -8592,6 +9245,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.9}
   m_EdgeRadius: 0
+--- !u!82 &942496222
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942496216}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &947780063
 GameObject:
   m_ObjectHideFlags: 0
@@ -8850,6 +9600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
@@ -8878,6 +9630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -8935,6 +9689,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
+--- !u!82 &1004349222
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004349216}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1033820844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9044,6 +9895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -9101,6 +9954,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.87, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1046379405
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69528174}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1048972792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407431392952785950, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -9118,6 +10068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -9175,6 +10127,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.87, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1048972798
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390098326}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1060496191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -9243,6 +10292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 0}
@@ -9400,6 +10451,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1475071665}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1475071667}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &1084046035 stripped
 GameObject:
@@ -9621,6 +10675,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 817443288}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 817443290}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!4 &1152593150 stripped
 Transform:
@@ -9639,6 +10696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -9696,6 +10755,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.87, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1152593156
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084046035}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1152927594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10621,6 +11777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -10680,7 +11838,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.83}
+    oldSize: {x: 2.86, y: 1.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10700,6 +11858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
@@ -11311,6 +12471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -11404,7 +12566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -11638,6 +12800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -11695,6 +12859,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
+--- !u!82 &1475071667
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575471824}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1492944321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11880,6 +13141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -11908,6 +13171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -11965,6 +13230,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.83}
   m_EdgeRadius: 0
+--- !u!82 &1503395576
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503395570}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1507864009
 GameObject:
   m_ObjectHideFlags: 0
@@ -12017,6 +13379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -12074,6 +13438,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.9}
   m_EdgeRadius: 0
+--- !u!82 &1521476270
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521476264}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1525030357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -12142,6 +13603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -12289,6 +13752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -12346,6 +13811,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1561243056
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498226903}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1572259560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12437,6 +13999,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1152593154}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1152593156}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &1574077571 stripped
 GameObject:
@@ -12506,6 +14071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -12858,6 +14425,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1561243054}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1561243056}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &1616551797
 PrefabInstance:
@@ -12970,6 +14540,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 942496220}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 942496222}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &1623407283
 PrefabInstance:
@@ -13186,6 +14759,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1503395574}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1503395576}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &1630536283
 GameObject:
@@ -13304,7 +14880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -537
+      value: -441
       objectReference: {fileID: 0}
     - target: {fileID: 7105725954470511944, guid: 35d6ac0fe37e4d14cb5ba12ce66fa367, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13361,7 +14937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -423
+      value: -330
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13421,6 +14997,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -13478,6 +15056,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.9}
   m_EdgeRadius: 0
+--- !u!82 &1654588794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373570489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1657464875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13569,6 +15244,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1871941139}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871941141}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &1658249266
 PrefabInstance:
@@ -13777,6 +15455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -14209,7 +15889,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.83}
+    oldSize: {x: 2.86, y: 1.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -14229,6 +15909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
@@ -14351,6 +16033,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1004349220}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1004349222}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1 &1778988630
 GameObject:
@@ -14499,6 +16184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 0}
@@ -14527,6 +16214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -14584,6 +16273,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.9}
   m_EdgeRadius: 0
+--- !u!82 &1795700759
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548086113}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1798737660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
@@ -14652,6 +16438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -14774,6 +16562,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2076400146}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2076400148}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &1823804147
 PrefabInstance:
@@ -15027,6 +16818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -15134,6 +16927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -15191,6 +16986,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1841492410
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500634978}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1850474197
 GameObject:
   m_ObjectHideFlags: 0
@@ -15299,6 +17191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -15490,6 +17384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 0}
+  breakSoundWin: {fileID: 0}
   health: 1
   unbreakable: 1
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -15630,6 +17526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 4998013886992514693, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -15687,6 +17585,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.87, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &1871941141
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310934043}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1875016856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15701,7 +17696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -423
+      value: -299
       objectReference: {fileID: 0}
     - target: {fileID: 802024238519301161, guid: f7af789e3c43dd44cba7afcc29128676, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15860,6 +17855,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1654588792}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654588794}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!4 &1899286422 stripped
 Transform:
@@ -16021,7 +18019,7 @@ PrefabInstance:
     - target: {fileID: 1407550982697552767, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
+      objectReference: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
     - target: {fileID: 3165395897347067480, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -16040,7 +18038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -16063,9 +18061,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 546763897}
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 546763896}
@@ -16133,7 +18128,7 @@ PrefabInstance:
     - target: {fileID: 1407550982697552767, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
+      objectReference: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
     - target: {fileID: 3165395897347067480, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -16152,7 +18147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -16360,6 +18355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 2
   unbreakable: 0
   normalSprite: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -16587,6 +18584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 0}
@@ -16661,7 +18660,7 @@ PrefabInstance:
     - target: {fileID: 1407550982697552767, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3023606338995776874, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
+      objectReference: {fileID: 8097731145221482336, guid: 552b055adcc69004b8183c0f95edcd6c, type: 3}
     - target: {fileID: 3165395897347067480, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -16680,7 +18679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_TagString
-      value: Brick
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7174997168684312647, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       propertyPath: m_Size.x
@@ -16727,6 +18726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5066788961422028217, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -16784,6 +18785,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9, y: 0.91}
   m_EdgeRadius: 0
+--- !u!82 &2012006055
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851767011}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2020881728
 GameObject:
   m_ObjectHideFlags: 0
@@ -17003,6 +19101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -17194,6 +19294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: 0}
@@ -17296,6 +19398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1048972796}
+    - targetCorrespondingSourceObject: {fileID: 3625362687362650316, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048972798}
   m_SourcePrefab: {fileID: 100100000, guid: 83a4cdc7ffab7e64283590e299de2c8c, type: 3}
 --- !u!1001 &2068142062
 PrefabInstance:
@@ -17418,6 +19523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81637ea3216dc134489352a95d729f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteBricks
+  breakSound: {fileID: 8300000, guid: e0c780964f495e541a047a3533f322dc, type: 3}
+  breakSoundWin: {fileID: 8300000, guid: 67e0baec28af3f94594f1bf0e3c8104e, type: 3}
   health: 1
   unbreakable: 0
   normalSprite: {fileID: -5518004741430953684, guid: 6e5118cbe56764e49a670583d7df5e23, type: 3}
@@ -17475,6 +19582,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.84, y: 0.9}
   m_EdgeRadius: 0
+--- !u!82 &2076400148
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887160222}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2098854321
 PrefabInstance:
   m_ObjectHideFlags: 0
