@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\",
+  "WorkspaceRootPath": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\assets\\scripts\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platformscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\assets\\scripts\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\auth\\shopui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\auth\\shopui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\assets\\scripts\\ballmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\auth\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\auth\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\assets\\scripts\\moveplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moveplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\auth\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\auth\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\auth\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\auth\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\api\\apirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620F521-CED7-654D-E798-46CFF94C47C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\api\\apirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeleteBricks.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DeleteBricks.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DeleteBricks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:26:58.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovePlatform.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\MovePlatform.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MovePlatform.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\MovePlatform.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MovePlatform.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:10:08.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlatformScript.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\PlatformScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlatformScript.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\PlatformScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlatformScript.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAAAxAAAAAAAAAA==",
+              "Title": "DeleteBricks.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DeleteBricks.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DeleteBricks.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:02:04.776Z",
+              "WhenOpened": "2026-03-24T09:32:35.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BallMove.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\BallMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BallMove.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\BallMove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BallMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ShopUI.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\ShopUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Auth\\ShopUI.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\ShopUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Auth\\ShopUI.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:01:54.164Z",
+              "WhenOpened": "2026-03-24T09:31:27.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Bonus.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\Bonus.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Bonus.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\arcanoidunity\\Assets\\Scripts\\Bonus.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Bonus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Auth\\CoinManager.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Auth\\CoinManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:01:51.203Z",
+              "WhenOpened": "2026-03-24T09:30:42.163Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginUI.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\LoginUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Auth\\LoginUI.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\LoginUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Auth\\LoginUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:29:26.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\UserService.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Auth\\UserService.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Auth\\UserService.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Auth\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:29:12.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiRequest.cs",
+              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Api\\ApiRequest.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Api\\ApiRequest.cs",
+              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Api\\ApiRequest.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Api\\ApiRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:25:30.38Z"
             }
           ]
         }
