@@ -1,41 +1,53 @@
-using UnityEngine;
 using TMPro;
-using System.Collections;
+using UnityEngine;
 
 public class LoginUI : MonoBehaviour
 {
-    public TMP_InputField loginInput;
-    public TMP_InputField passwordInput;
+    [SerializeField] private TMP_InputField loginInput;
+    [SerializeField] private TMP_InputField passwordInput;
+    [SerializeField] private ApiRequest apiRequest;
+    [SerializeField] private CoinUI coinUI;
+    [SerializeField] private BallSkinLoader ballSkinLoader;
+    [SerializeField] private GameObject loginPanel;
+    [SerializeField] private GameObject gamePanel;
 
-    public ApiRequest api;
+    public void Register()
+    {
+        RegisterRequest request = new RegisterRequest
+        {
+            Login = loginInput.text,
+            Password = passwordInput.text
+        };
+
+        StartCoroutine(apiRequest.Post<RegisterRequest, AuthResponse>("register", request, response =>
+        {
+            UserSession.UserId = response.UserId;
+
+            loginPanel.SetActive(false);
+            gamePanel.SetActive(true);
+
+            coinUI.LoadCoins();
+            ballSkinLoader.LoadSelectedSkin();
+        }));
+    }
 
     public void Login()
     {
-        StartCoroutine(api.Post("login",
-            JsonUtility.ToJson(new LoginRequest
-            {
-                login = loginInput.text,
-                password = passwordInput.text
-            }),
-            (response) =>
-            {
-                var res = JsonUtility.FromJson<LoginResponse>(response);
-                UserService.UserId = res.userId;
+        LoginRequests request = new LoginRequests
+        {
+            Login = loginInput.text,
+            Password = passwordInput.text
+        };
 
-                Debug.Log("Успешный вход");
-            }));
+        StartCoroutine(apiRequest.Post<LoginRequests, AuthResponse>("login", request, response =>
+        {
+            UserSession.UserId = response.UserId;
+
+            loginPanel.SetActive(false);
+            gamePanel.SetActive(true);
+
+            coinUI.LoadCoins();
+            ballSkinLoader.LoadSelectedSkin();
+        }));
     }
-}
-
-[System.Serializable]
-public class LoginRequest
-{
-    public string login;
-    public string password;
-}
-
-[System.Serializable]
-public class LoginResponse
-{
-    public int userId;
 }

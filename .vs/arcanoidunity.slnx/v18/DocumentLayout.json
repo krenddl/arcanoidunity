@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\",
+  "WorkspaceRootPath": "C:\\Users\\uryuqq\\Arcanoid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\movebrick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\movebrick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movebrick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deletebricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\ballmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\ballmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bonus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\level1script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\level1script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\level1script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\202306\\desktop\\arcanoid\\arcanoidunity\\assets\\scripts\\levelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\uryuqq\\arcanoid\\assets\\scripts\\levelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,37 +40,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "BallMove.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\BallMove.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\BallMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BallMove.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\BallMove.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\BallMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\BallMove.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T09:33:37.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T09:33:37.435Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Bonus.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Bonus.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\Bonus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bonus.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Bonus.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\Bonus.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bonus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T09:33:36.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T09:33:36.366Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MoveBrick.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\MoveBrick.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\MoveBrick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MoveBrick.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\MoveBrick.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\MoveBrick.cs",
               "RelativeToolTip": "Assets\\Scripts\\MoveBrick.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T08:58:08.484Z",
               "EditorCaption": ""
@@ -79,44 +77,37 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Level1Script.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Level1Script.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\Level1Script.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Level1Script.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\Level1Script.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\Level1Script.cs",
               "RelativeToolTip": "Assets\\Scripts\\Level1Script.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T08:05:04.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T08:05:04.796Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "DeleteBricks.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\DeleteBricks.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DeleteBricks.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\DeleteBricks.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\DeleteBricks.cs",
               "RelativeToolTip": "Assets\\Scripts\\DeleteBricks.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T07:46:34.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T07:46:34.953Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LevelScript.cs",
-              "DocumentMoniker": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\LevelScript.cs",
+              "DocumentMoniker": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\LevelScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelScript.cs",
-              "ToolTip": "C:\\Users\\202306\\Desktop\\arcanoid\\arcanoidunity\\Assets\\Scripts\\LevelScript.cs",
+              "ToolTip": "C:\\Users\\uryuqq\\Arcanoid\\Assets\\Scripts\\LevelScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\LevelScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T07:25:05.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-03-11T07:25:05.991Z"
             }
           ]
         }

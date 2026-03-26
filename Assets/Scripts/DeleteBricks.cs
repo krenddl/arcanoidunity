@@ -14,12 +14,14 @@ public class DeleteBricks : MonoBehaviour
 
     [SerializeField] private GameObject[] bonusPrefabs;
     [SerializeField] private float bonusChance = 0.3f;
-    [SerializeField] private int coinReward = 5;
+    [SerializeField] private int rewardCoins = 5;
     private SpriteRenderer sr;
+    private CoinUI coinUI;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        coinUI = FindFirstObjectByType<CoinUI>();
         UpdateBrickSprite();
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,7 +42,10 @@ public class DeleteBricks : MonoBehaviour
             if (bricks.Length == 1)
             {
                 AudioSource.PlayClipAtPoint(breakSoundWin, transform.position);
-                FindObjectOfType<CoinManager>().AddCoins(coinReward);
+                if(coinUI != null)
+                {
+                    coinUI.AddCoins(rewardCoins);
+                }
                 Time.timeScale = 0f;
                 StartCoroutine(RestartScene());
                 Destroy(gameObject, breakSoundWin.length);
