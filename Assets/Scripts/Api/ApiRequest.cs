@@ -13,8 +13,8 @@ public class ApiRequest : MonoBehaviour
         string json = JsonUtility.ToJson(data);
 
         using UnityWebRequest request = new UnityWebRequest(baseUrl + endpoint, "POST");
-
         byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");

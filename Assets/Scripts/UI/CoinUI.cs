@@ -10,30 +10,28 @@ public class CoinUI : MonoBehaviour
 
     public void LoadCoins()
     {
-        if (!UserSession.IsAuth)
-            return;
+        if (!UserSession.IsAuth) return;
 
         StartCoroutine(apiRequest.Get<CoinsResponse>($"{UserSession.UserId}/coins", response =>
         {
-            CurrentCoins = response.Coins;
+            CurrentCoins = response.coins;
             coinsText.text = $"Coins: {CurrentCoins}";
         }));
     }
 
     public void AddCoins(int amount)
     {
-        if (!UserSession.IsAuth)
-            return;
+        if (!UserSession.IsAuth) return;
 
         AddCoinsRequest request = new AddCoinsRequest
         {
-            UserId = UserSession.UserId,
-            Amount = amount
+            userId = UserSession.UserId,
+            amount = amount
         };
 
         StartCoroutine(apiRequest.Post<AddCoinsRequest, BuySkinResponse>("add-coins", request, response =>
         {
-            CurrentCoins = response.Coins;
+            CurrentCoins = response.coins;
             coinsText.text = $"Coins: {CurrentCoins}";
         }));
     }

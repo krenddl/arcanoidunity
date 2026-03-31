@@ -89,6 +89,11 @@ public class UIScript : MonoBehaviour
     private void SpawnBall()
     {
         GameObject newBall = Instantiate(ballPrefab);
+        SpriteRenderer sr = newBall.GetComponent<SpriteRenderer>();
+        if (sr != null && BallSkinLoader.Instance != null)
+        {
+            BallSkinLoader.Instance.ApplySkinToRenderer(sr);
+        }
 
         newBall.transform.position = Vector3.zero;
         newBall.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);

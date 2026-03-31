@@ -3,12 +3,23 @@ using UnityEngine;
 public class BallSkinLoader : MonoBehaviour
 {
     [SerializeField] private ApiRequest apiRequest;
-    [SerializeField] private SpriteRenderer ballSpriteRenderer;
 
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private Sprite redSprite;
     [SerializeField] private Sprite blueSprite;
     [SerializeField] private Sprite goldSprite;
+
+    [SerializeField] private SpriteRenderer level1BallRenderer;
+    [SerializeField] private SpriteRenderer level2BallRenderer;
+    [SerializeField] private SpriteRenderer level3BallRenderer;
+
+    public static int CurrentSkinId = 1;
+    public static BallSkinLoader Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public void LoadSelectedSkin()
     {
@@ -17,25 +28,41 @@ public class BallSkinLoader : MonoBehaviour
 
         StartCoroutine(apiRequest.Get<SelectedSkinResponse>($"{UserSession.UserId}/selected-skin", response =>
         {
-            ApplySkin(response.SkinId);
+            CurrentSkinId = response.skinId;
+            ApplySkinToAllSceneBalls();
         }));
     }
 
-    private void ApplySkin(int skinId)
+    public void ApplySkinToAllSceneBalls()
     {
+        ApplySkin(level1BallRenderer, CurrentSkinId);
+        ApplySkin(level2BallRenderer, CurrentSkinId);
+        ApplySkin(level3BallRenderer, CurrentSkinId);
+    }
+
+    public void ApplySkinToRenderer(SpriteRenderer targetRenderer)
+    {
+        ApplySkin(targetRenderer, CurrentSkinId);
+    }
+
+    private void ApplySkin(SpriteRenderer targetRenderer, int skinId)
+    {
+        if (targetRenderer == null)
+            return;
+
         switch (skinId)
         {
             case 2:
-                ballSpriteRenderer.sprite = redSprite;
+                targetRenderer.sprite = redSprite;
                 break;
             case 3:
-                ballSpriteRenderer.sprite = blueSprite;
+                targetRenderer.sprite = blueSprite;
                 break;
             case 4:
-                ballSpriteRenderer.sprite = goldSprite;
+                targetRenderer.sprite = goldSprite;
                 break;
             default:
-                ballSpriteRenderer.sprite = defaultSprite;
+                targetRenderer.sprite = defaultSprite;
                 break;
         }
     }

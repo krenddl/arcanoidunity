@@ -15,17 +15,15 @@ public class LoginUI : MonoBehaviour
     {
         RegisterRequest request = new RegisterRequest
         {
-            Login = loginInput.text,
-            Password = passwordInput.text
+            login = loginInput.text,
+            password = passwordInput.text
         };
 
         StartCoroutine(apiRequest.Post<RegisterRequest, AuthResponse>("register", request, response =>
         {
-            UserSession.UserId = response.UserId;
-
+            UserSession.UserId = response.userId;
             loginPanel.SetActive(false);
             gamePanel.SetActive(true);
-
             coinUI.LoadCoins();
             ballSkinLoader.LoadSelectedSkin();
         }));
@@ -35,17 +33,15 @@ public class LoginUI : MonoBehaviour
     {
         LoginRequests request = new LoginRequests
         {
-            Login = loginInput.text,
-            Password = passwordInput.text
+            login = loginInput.text,
+            password = passwordInput.text
         };
 
         StartCoroutine(apiRequest.Post<LoginRequests, AuthResponse>("login", request, response =>
         {
-            UserSession.UserId = response.UserId;
-
+            UserSession.UserId = response.userId;
             loginPanel.SetActive(false);
             gamePanel.SetActive(true);
-
             coinUI.LoadCoins();
             ballSkinLoader.LoadSelectedSkin();
         }));

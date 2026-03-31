@@ -58,6 +58,17 @@ public class PlatformScript : MonoBehaviour
         ball1.transform.localScale = currentBall.transform.localScale;
         ball2.transform.localScale = currentBall.transform.localScale;
 
+        SpriteRenderer sr1 = ball1.GetComponent<SpriteRenderer>();
+        SpriteRenderer sr2 = ball2.GetComponent<SpriteRenderer>();
+
+        if (BallSkinLoader.Instance != null)
+        {
+            if (sr1 != null)
+                BallSkinLoader.Instance.ApplySkinToRenderer(sr1);
+
+            if (sr2 != null)
+                BallSkinLoader.Instance.ApplySkinToRenderer(sr2);
+        }
 
         BallMove bm1 = ball1.GetComponent<BallMove>();
         BallMove bm2 = ball2.GetComponent<BallMove>();

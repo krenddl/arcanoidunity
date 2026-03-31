@@ -10,90 +10,90 @@ public class Requests
 [Serializable]
 public class RegisterRequest
 {
-    public string Login;
-    public string Password;
+    public string login;
+    public string password;
 }
 
 [Serializable]
 public class LoginRequests
 {
-    public string Login;
-    public string Password;
+    public string login;
+    public string password;
 }
 
 [Serializable]
 public class AuthResponse
 {
-    public bool Status;
-    public int UserId;
+    public bool status;
+    public int userId;
 }
 
 [Serializable]
 public class AuthResponses
 {
-    public bool Status;
-    public int UserId;
+    public bool status;
+    public int userId;
 }
 
 [Serializable]
 public class CoinsResponse
 {
-    public int Coins;
+    public int coins;
 }
 
 [Serializable]
 public class AddCoinsRequest
 {
-    public int UserId;
-    public int Amount;
+    public int userId;
+    public int amount;
 }
 
 [Serializable]
 public class BuySkinRequest
 {
-    public int UserId;
-    public int SkinId;
+    public int userId;
+    public int skinId;
 }
 
 [Serializable]
 public class SelectSkinRequest
 {
-    public int UserId;
-    public int SkinId;
+    public int userId;
+    public int skinId;
 }
 
 [Serializable]
 public class BuySkinResponse
 {
-    public bool Status;
-    public int Coins;
+    public bool status;
+    public int coins;
 }
 
 [Serializable]
 public class SelectedSkinResponse
 {
-    public int SkinId;
-    public string Name;
+    public int skinId;
+    public string name;
 }
 
 [Serializable]
 public class SkinItem
 {
-    public int SkinId;
-    public string Name;
-    public int Price;
-    public bool IsPurchased;
-    public bool IsSelected;
+    public int skinId;
+    public string name;
+    public int? price;
+    public bool isPurchased;
+    public bool isSelected;
 }
 
 [Serializable]
 public class SkinsResponse
 {
-    public SkinItem[] Skins;
+    public SkinItem[] skins;
 }
 
 [Serializable]
 public class SimpleResponse
 {
-    public bool Status;
+    public bool status;
 }

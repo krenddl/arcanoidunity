@@ -8,13 +8,12 @@ public class ShopUI : MonoBehaviour
 
     public void BuySkin(int skinId)
     {
-        if (!UserSession.IsAuth)
-            return;
+        if (!UserSession.IsAuth) return;
 
         BuySkinRequest request = new BuySkinRequest
         {
-            UserId = UserSession.UserId,
-            SkinId = skinId
+            userId = UserSession.UserId,
+            skinId = skinId
         };
 
         StartCoroutine(apiRequest.Post<BuySkinRequest, BuySkinResponse>("buy-skin", request, response =>
@@ -25,13 +24,12 @@ public class ShopUI : MonoBehaviour
 
     public void SelectSkin(int skinId)
     {
-        if (!UserSession.IsAuth)
-            return;
+        if (!UserSession.IsAuth) return;
 
         SelectSkinRequest request = new SelectSkinRequest
         {
-            UserId = UserSession.UserId,
-            SkinId = skinId
+            userId = UserSession.UserId,
+            skinId = skinId
         };
 
         StartCoroutine(apiRequest.Post<SelectSkinRequest, SimpleResponse>("select-skin", request, response =>

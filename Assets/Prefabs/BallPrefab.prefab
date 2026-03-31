@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6513501812391884724}
   - component: {fileID: -8004603994291263755}
   - component: {fileID: 4417604365976276838}
-  - component: {fileID: 8739174966623561570}
   m_Layer: 0
   m_Name: BallPrefab
   m_TagString: Ball
@@ -171,21 +170,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8739174966623561570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806932047062406733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bffdb18e7cb6edd4faef649c907c23c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BallSkinLoader
-  apiRequest: {fileID: 0}
-  ballSpriteRenderer: {fileID: 0}
-  defaultSprite: {fileID: 0}
-  redSprite: {fileID: 0}
-  blueSprite: {fileID: 0}
-  goldSprite: {fileID: 0}
