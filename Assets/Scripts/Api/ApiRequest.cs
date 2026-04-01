@@ -28,7 +28,7 @@ public class ApiRequest : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"POST ERROR: {request.error}\n{request.downloadHandler.text}");
+            Debug.LogError($"Post Error: {request.error}\n{request.downloadHandler.text}");
         }
     }
 
@@ -45,7 +45,7 @@ public class ApiRequest : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"GET ERROR: {request.error}\n{request.downloadHandler.text}");
+            Debug.LogError($"Get Error: {request.error}\n{request.downloadHandler.text}");
         }
     }
 }
